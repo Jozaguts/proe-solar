@@ -1,4 +1,4 @@
-# front-proe-solar
+    # front-proe-solar
 
 > Página institucional proe-solar.com
 
@@ -19,4 +19,4 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+>Jozaguts.dev
