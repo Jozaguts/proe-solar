@@ -11,11 +11,11 @@
           <li v-for="feature in data.features"
               :key="feature"
               v-text="feature"
-              class="text-white text-left li-text-feature pl-4 text-base leading-loose"
+              class="text-white text-left li-text-custom pl-4 text-base leading-loose"
           ></li>
         </ul>
         <div class="btn-container mb-4">
-          <button class="btn text-white font-medium bg-info px-24 py-4 rounded">Cotiza</button>
+          <button class="btn text-white font-medium bg-info-color px-24 py-4 rounded">Cotiza</button>
         </div>
       </div>
     </div>
@@ -44,20 +44,5 @@
   width: 100%;
   max-width: 70px;
 }
-.li-text-feature{
-  position: relative;
-}
-  .li-text-feature:before{
-    width: 8px;
-    height: 8px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background: var(--info-color);
-  }
+
 </style>

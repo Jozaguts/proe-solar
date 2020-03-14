@@ -11,14 +11,11 @@
         <form-component></form-component>
       </div>
     </div><!--end hero-->
-      <section class="services-area">   <!--services area-->
+      <section class="services-area px-8">   <!--services area-->
         <services-area> </services-area>
       </section>  <!--end services area-->
-    <section class="about-area mb-10 mx-4">
+    <section class="about-area mb-10 px-8">
       <about-area :image="aboutImage"></about-area>
-      <div class="title-container">
-        <h1 class="text-2xl">¿Por qué elegirnos? </h1>
-      </div>
     </section>
 
 
