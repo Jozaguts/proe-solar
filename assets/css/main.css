@@ -8,3 +8,35 @@
   --error-color:#f8a51f;
   --info-color: #44b8fc;
 }
+.bg-info-color{
+  background-color: var(--info-color);
+}
+.text-info-color{
+  color: var(--info-color);
+}
+.bg-main-color{
+  background-color: var(--main-color);
+}
+.text-main-color {
+  color: var(--main-color);
+}
+.text-main-dark-color {
+  color: var(--main-dark-color);
+}
+.bg-main-light-color{
+  background-color: var(--main-light-color);
+}
+.border-main-color{
+  border-color: var(--main-color);
+}
+.separator{
+  display: inline-block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--main-color);
+  border-radius: 2px;
+  border-bottom: 4px;
+}
+.text-second-color{
+  color: var(--second-color);
+}

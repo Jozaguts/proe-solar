@@ -72,12 +72,5 @@
     padding-top: 100px;
     padding-bottom: 50px;
   }
-  .separator{
-    display: inline-block;
-    width: 60px;
-    height: 4px;
-    background-color: var(--main-color);
-    border-radius: 2px;
-    border-bottom: 4px;
-  }
+
 </style>

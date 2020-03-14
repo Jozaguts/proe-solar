@@ -11,9 +11,15 @@
         <form-component></form-component>
       </div>
     </div><!--end hero-->
-      <div class="services-area">   <!--services area-->
+      <section class="services-area">   <!--services area-->
         <services-area> </services-area>
-      </div>  <!--end services area-->
+      </section>  <!--end services area-->
+    <section class="about-area mb-10 mx-4">
+      <about-area :image="aboutImage"></about-area>
+      <div class="title-container">
+        <h1 class="text-2xl">¿Por qué elegirnos? </h1>
+      </div>
+    </section>
 
 
   </div>
@@ -22,10 +28,20 @@
 <script>
   import FormComponent from "@/components/Form";
   import ServicesArea from "@/components/ServicesArea";
+  import AboutArea from "@/components/AboutArea";
 export default {
   components:{
     FormComponent,
-    ServicesArea
+    ServicesArea,
+    AboutArea
+  },
+  data () {
+    return {
+      aboutImage:{
+        src: '/img/team-worker.jpg',
+        alt: 'Imagen de equipo de trabajo'
+      }
+    }
   }
 }
 </script>
@@ -43,12 +59,6 @@ export default {
   }
 
   .full-width-container {
-    /*background-image: url('/img/solar-panels.jpg');*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: 50% 50%;*/
-    /*background-size: cover;*/
-    /*position: relative;*/
-    /*z-index: 30;*/
     width: 100%;
   }
   .form-container{

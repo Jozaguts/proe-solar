@@ -1,14 +1,14 @@
 <template>
   <header>
     <nav
-      class="flex items-center justify-between flex-wrap info-bg-color p-6  sticky top-0"
+      class="flex items-center justify-between flex-wrap bg-info-color p-6  sticky top-0"
     >
       <div class="flex items-center flex-shrink-0 text-white mr-6">
         <figure>
           <img src="/img/logo200x100.png" width="200" height="150" alt="proesolar_logo">
-          <figcaption class="main-text-color">Proyectos de obra eléctrica y solares</figcaption>
+          <figcaption class="text-main-color">Proyectos de obra eléctrica y solares</figcaption>
         </figure>
-<!--        <span class="font-semibold text-xl tracking-tight main-text-color">Obra eléctrica  y solares </span>-->
+<!--        <span class="font-semibold text-xl tracking-tight text-main-color">Obra eléctrica  y solares </span>-->
       </div>
       <div class="block lg:hidden">
         <button
@@ -33,28 +33,28 @@
         <div class="text-base font-semibold lg:flex-grow">
           <router-link
           to="/"
-          class="block mt-4 lg:inline-block lg:mt-0 dark-main-text-color hover:text-white mr-4"
+          class="block mt-4 lg:inline-block lg:mt-0 text-main-dark-color hover:text-white mr-4"
           >
             Home
           </router-link>
           <router-link
           to="/servicios"
-          class="block mt-4 lg:inline-block lg:mt-0 dark-main-text-color hover:text-white mr-4">
+          class="block mt-4 lg:inline-block lg:mt-0 text-main-dark-color hover:text-white mr-4">
             Servicios
           </router-link>
           <router-link
           to="/contacto"
-          class="block mt-4 lg:inline-block lg:mt-0 main-text-color hover:text-white mr-4"
+          class="block mt-4 lg:inline-block lg:mt-0 text-main-color hover:text-white mr-4"
           >
             Contacto
           </router-link>
           <router-link to="/nosotros"
-                       class="block mt-4 lg:inline-block lg:mt-0 main-text-color hover:text-white mr-4"
+                       class="block mt-4 lg:inline-block lg:mt-0 text-main-color hover:text-white mr-4"
           >
             Nosotros
           </router-link>
           <router-link to="/proyectos"
-                       class="block mt-4 lg:inline-block lg:mt-0 main-text-color hover:text-white"
+                       class="block mt-4 lg:inline-block lg:mt-0 text-main-color hover:text-white"
           >
             Proyectos
           </router-link>
@@ -62,7 +62,7 @@
         <div>
           <a
             href="tel:3221029376"
-            class="btn-contacto flex text-sm px-4 py-2 leading-none border rounded main-text-color primari-border-color hover:border-transparent mt-4 lg:mt-0"
+            class="btn-contacto flex text-sm px-4 py-2 leading-none border rounded text-main-color border-main-color hover:border-transparent mt-4 lg:mt-0"
             >
             <svg viewBox="0 0 20 20" width="20" height="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g id="phone-icon" stroke="none"  stroke-width="1" fill="#142d7b" fill-rule="evenodd">
@@ -97,34 +97,16 @@ export default {
 </script>
 
 <style scoped>
- .main-bg-color{
-    background-color: var(--main-color);
- }
- .light-bg-color{
-   background-color: var(--main-light-color);
- }
- .info-bg-color {
-   background-color: var(--info-color);
- }
-  .main-text-color {
-    color: var(--main-color);
-  }
-  .dark-main-text-color {
-    color: var(--main-dark-color);
-  }
-  .second-text-color{
-    color: var(--second-color);
-  }
-  .primari-border-color{
-    border-color: var(--main-color);
-  }
+
   .btn-contacto:hover{
     background-color: white;
     color: var(--main-color);
     border-color: transparent;
     transition: all .4s;
     fill: var(--main-color);
-  } .btn-contacto:hover #phone-icon{
+
+  }
+  .btn-contacto:hover #phone-icon{
     transition: all .4s;
     fill: var(--main-color);
   }

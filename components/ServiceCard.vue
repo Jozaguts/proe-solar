@@ -4,7 +4,7 @@
         <img :src="data.src" :alt="data.alt" >
       </span>
       <div class="title-container">
-        <h1 class="text-info mb-4 font-bold capitalize"v-text="data.title"> </h1>
+        <h1 class="text-info-color mb-4 font-bold capitalize"v-text="data.title"> </h1>
       </div>
       <div class="content-container text-center px-10">
         <ul class="pb-8">
@@ -38,9 +38,6 @@
     background: linear-gradient(to top, #142E7B, #4E56AB);
     border-radius: 5px;
   }
-  .bg-info {
-    background-color: var(--info-color);
-  }
 .icon-container{
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -62,8 +59,5 @@
     top: 50%;
     transform: translateY(-50%);
     background: var(--info-color);
-  }
-  .text-info{
-    color: var(--info-color);
   }
 </style>
