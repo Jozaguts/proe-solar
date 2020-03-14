@@ -1,6 +1,6 @@
 <template>
   <div class="full-width-container ">
-    <div class="grid-container">
+    <div class="grid-container"> <!--hero-->
       <div class="call-to-action-container p-8">
         <h1 class="main-title capitalize">Energía de calidad al alcance</h1>
         <button class="btn btn-call-to ">
@@ -10,15 +10,22 @@
       <div class="form-container p-8">
         <form-component></form-component>
       </div>
-    </div>
+    </div><!--end hero-->
+      <div class="services-area">   <!--services area-->
+        <services-area> </services-area>
+      </div>  <!--end services area-->
+
+
   </div>
 </template>
 
 <script>
   import FormComponent from "@/components/Form";
+  import ServicesArea from "@/components/ServicesArea";
 export default {
   components:{
-    FormComponent
+    FormComponent,
+    ServicesArea
   }
 }
 </script>
@@ -36,16 +43,19 @@ export default {
   }
 
   .full-width-container {
-    background-image: url('/img/solar-panels.jpg');
-    perspective:600px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    position: relative;
-    z-index: 30;
+    /*background-image: url('/img/solar-panels.jpg');*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: 50% 50%;*/
+    /*background-size: cover;*/
+    /*position: relative;*/
+    /*z-index: 30;*/
     width: 100%;
   }
-  .full-width-container::before{
+  .form-container{
+    position: relative;
+    z-index: 30;
+  }
+  .grid-container::before{
     content: "";
     display: block;
     position: absolute;
@@ -58,17 +68,23 @@ export default {
   }
   .grid-container {
     position: relative;
-    z-index: 30;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 1rem;
+    background-image: url('/img/solar-panels.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    z-index: 30;
   }
   .call-to-action-container {
     display: flex;
     flex-direction: column;
     padding: 2rem;
     position: relative;
+    z-index: 30;
     animation: appear 1s;
   }
   .btn {
