@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col items-center service-card mb-8 pb-8">
+    <div class="flex flex-col items-center service-card pb-8">
       <span class="icon-container">
         <img :src="data.src" :alt="data.alt" >
       </span>

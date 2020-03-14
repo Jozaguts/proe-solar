@@ -14,8 +14,11 @@
       <section class="services-area px-8">   <!--services area-->
         <services-area> </services-area>
       </section>  <!--end services area-->
-    <section class="about-area mb-10 px-8">
+    <section class="about-area px-8">
       <about-area :image="aboutImage"></about-area>
+    </section>
+    <section class="last-project-area px-8">
+      <last-projects-area></last-projects-area>
     </section>
 
 
@@ -26,11 +29,13 @@
   import FormComponent from "@/components/Form";
   import ServicesArea from "@/components/ServicesArea";
   import AboutArea from "@/components/AboutArea";
+  import LastProjectsArea from '../components/LastProjectsArea'
 export default {
   components:{
     FormComponent,
     ServicesArea,
-    AboutArea
+    AboutArea,
+    LastProjectsArea
   },
   data () {
     return {
