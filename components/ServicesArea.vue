@@ -29,22 +29,20 @@
             alt: "icono obras eléctrica",
             title: "Obra eléctrica",
             features:[
-              'Lorem ipsum dolor.',
-              'Lorem ipsum dolor sit amet.',
-              'Lorem ipsum dolor sit amet, consectetur.',
-              'Lorem ipsum.'
+              'Soluciones para el ahorro energético',
+              'instalciones electricas en baja tension',
+              'iluminación',
+              'alumbrado',
+              'planos y desarrollos eléctricos'
             ],
-
           },{
             id: 2,
             src: "/img/solar-panel.svg",
             alt: "imagen paneles solares",
             title: "Paneles Solares",
             features:[
-              'Lorem ipsum dolor.',
-              'Lorem ipsum dolor sit amet.',
-              'Lorem ipsum dolor sit amet, consectetur.',
-              'Lorem ipsum.'
+              'instalacion',
+              'Suministro',
             ],
 
           },
@@ -67,10 +65,8 @@
             alt: "imagen calentadores solares",
             title: "Aires Acondicionados",
             features:[
-              'Lorem ipsum dolor.',
-              'Lorem ipsum dolor sit amet.',
-              'Lorem ipsum dolor sit amet, consectetur.',
-              'Lorem ipsum.'
+              'instalación.',
+              'mantenimiento',
             ],
 
           },
