@@ -6,8 +6,8 @@
       <h2 class="text-center text-gray-700 mb-8"> Lorem ipsum dolor sit amet, consectetur adipisicing </h2>
   </div>
   <div class="grid col-gap-4 row-gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:text-2xl lg:grid-cols-2  xl:grid-cols-4 services-card-container ">
-    <div class="services-card-container__service" v-for="servicio in servicios">
-      <service-card  :key="servicio.id" :data="servicio"> </service-card>
+    <div class="services-card-container__service" v-for="servicio in servicios"  :key="servicio.id">
+      <service-card  :data="servicio"> </service-card>
     </div>
   </div>
 </div>
@@ -41,8 +41,10 @@
             alt: "imagen paneles solares",
             title: "Paneles Solares",
             features:[
-              'instalacion',
-              'Suministro',
+              'Venta de equipo',
+              'Instalación',
+              'Mantenimiento',
+              'Reparación'
             ],
 
           },
@@ -52,10 +54,10 @@
             alt: "imagen calentadores solares",
             title: "Calentadores Solares",
             features:[
-              'Lorem ipsum dolor.',
-              'Lorem ipsum dolor sit amet.',
-              'Lorem ipsum dolor sit amet, consectetur.',
-              'Lorem ipsum.'
+              'Venta de equipo.',
+              'Instalación (tubería y conexión del equipo).',
+              'Mantenimiento',
+
             ],
 
           },
@@ -65,8 +67,9 @@
             alt: "imagen calentadores solares",
             title: "Aires Acondicionados",
             features:[
-              'instalación.',
-              'mantenimiento',
+              'Venta de equipo.',
+              'Instalación',
+              'Mantenimiento'
             ],
 
           },
