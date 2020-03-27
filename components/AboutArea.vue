@@ -6,12 +6,12 @@
         </div>
         <div class="content-container">
           <h1 class="text-3xl mb-4">¿Por qué elegirnos? </h1>
-          <p class="text-gray-700 text-justify mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, vitae.</p>
+          <p class="text-gray-700 text-justify mb-4">Somos una empresa especializada en la calidad y ahorro energético, contando con personal altamente capacitado. Nos definen:</p>
           <ul class="pb-8 ">
-            <li class="text-left text-base li-text-custom pl-4 leading-loose">Lorem ipsum dolor sit amet Lorem ipsum dolor..</li>
-            <li class="text-left text-base li-text-custom pl-4 leading-loose">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</li>
-            <li class="text-left text-base li-text-custom pl-4 leading-loose">Lorem ipsum dolor.</li>
-            <li class="text-left text-base li-text-custom pl-4 leading-loose">Lorem ipsum dolor Lorem ipsum dolor. sit amet.</li>
+            <li class="text-left text-base li-text-custom pl-4 leading-loose">Calidad y Compromiso</li>
+            <li class="text-left text-base li-text-custom pl-4 leading-loose">Profesionalismo</li>
+            <li class="text-left text-base li-text-custom pl-4 leading-loose">Vanguardismo</li>
+            <li class="text-left text-base li-text-custom pl-4 leading-loose">Accesibilidad</li>
           </ul>
           <button class="bg-info-color text-white px-16 py-4 rounded text-center ">Nosotros</button>
         </div>
