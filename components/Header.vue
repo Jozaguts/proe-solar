@@ -35,7 +35,7 @@
           to="/"
           class="block mt-4 lg:inline-block lg:mt-0 text-main-dark-color hover:text-white mr-4"
           >
-            Home
+            Inicio
           </router-link>
           <router-link
           to="/servicios"

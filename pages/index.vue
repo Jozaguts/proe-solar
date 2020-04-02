@@ -55,7 +55,6 @@ export default {
     showContainer(entries,observer){
       entries.forEach(entry => {
         if(entry.isIntersecting && !this[entry.target.id]){
-          console.log(entries)
           this[entry.target.id] = true;
         }
       });
