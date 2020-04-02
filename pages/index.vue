@@ -1,6 +1,6 @@
 <template>
-  <div class="full-width-container ">
-    <div class="grid-container"> <!--hero-->
+  <div class="full-width-container " id="mainContainer">
+      <div class="grid-container"> <!--hero-->
       <div class="call-to-action-container p-8">
         <h1 class="main-title capitalize">Energía de calidad al alcance</h1>
         <button class="btn btn-call-to ">
@@ -11,17 +11,15 @@
         <form-component></form-component>
       </div>
     </div><!--end hero-->
-      <section class="services-area px-8">   <!--services area-->
-        <services-area> </services-area>
+      <section class="services-area px-8" ref="servicesArea" id="servicesArea">   <!--services area-->
+        <services-area  v-if="servicesArea" class="appear"> </services-area>
       </section>  <!--end services area-->
-    <section class="about-area px-8">
-      <about-area :image="aboutImage"></about-area>
-    </section>
-    <section class="last-project-area px-8">
-      <last-projects-area></last-projects-area>
-    </section>
-
-
+      <section class="about-area px-8" ref="aboutArea" id="aboutArea">
+        <about-area  v-if="aboutArea" :image="aboutImage" class="appear"></about-area>
+      </section>
+      <section class="last-project-area px-8" ref="lastProjectArea" id="lastProjectArea">
+        <last-projects-area   v-if="lastProjectArea" class="appear" ></last-projects-area>
+      </section>
   </div>
 </template>
 
@@ -42,7 +40,32 @@ export default {
       aboutImage:{
         src: '/img/team-worker.jpg',
         alt: 'Imagen de equipo de trabajo'
-      }
+      },
+      servicesArea:false,
+      lastProjectArea:false,
+      aboutArea:false,
+      options: {
+        root: null,
+        rootMargin: '0px 0px 0px 0px',
+        threshold: 1
+      },
+    }
+  },
+  methods: {
+    showContainer(entries,observer){
+      entries.forEach(entry => {
+        if(entry.isIntersecting && !this[entry.target.id]){
+          console.log(entries)
+          this[entry.target.id] = true;
+        }
+      });
+    },
+
+  },
+  mounted() {
+    const observer = new IntersectionObserver(this.showContainer, this.options)
+    for(let element in this.$refs) {
+      observer.observe(this.$refs[element])
     }
   }
 }
@@ -137,16 +160,7 @@ export default {
 }
 
 
-@keyframes appear {
-  from{
-    opacity: 0;
-    transform: translateX(10px);
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
+
 
 
 </style>

@@ -1,6 +1,6 @@
 <template>
 <div class="container mx-auto mt-56">
-  <div class="flex flex-col content-center items-center services-area__title-zone">
+  <div class="flex flex-col content-center items-center services-area__title-zone"  >
     <span class="separator"></span>
       <h1 class="font-bold text-2xl md:text-5xl mb-2 capitalize"> Nuestros servicios</h1>
       <h2 class="text-center text-gray-700 mb-8"> Lorem ipsum dolor sit amet, consectetur adipisicing </h2>
@@ -75,7 +75,7 @@
           },
         ]
       }
-    }
+    },
 
   }
 </script>
