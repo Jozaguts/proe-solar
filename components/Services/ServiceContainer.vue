@@ -1,12 +1,12 @@
 <template>
-  <div>
-    <div class="service-container flex my-16 "  v-for="(service, index) in services" :key="service.id">
-      <div class="img-container w-2/5" :class="[index % 2  === 0 ? 'order-1' : '']">
-        <carousel :nav="false">
+  <div >
+    <div class="service-container flex flex-col lg:flex-row md:flex-row  "  v-for="(service, index) in services" :key="service.id">
+      <div class="img-container lg:w-2/5"   :class="[index % 2  === 0 && $mq != 'sm'? 'order-1' : '']">
+        <carousel :nav="false" :responsive="{0:{items:1},768:{items:3}}" >
           <img v-for="img in service.images" :key="img.id" :src="img.src" :alt="img.alt" class="rounded p-2">
         </carousel>
       </div>
-      <div class="content-container px-5 w-3/5">
+      <div class="content-container px-5 lg:w-3/5">
         <h1 class="capitalize text-3xl text-info-color mb-3 font-bold" v-text="service.name"></h1>
         <p class="leading-relaxed text-main-color font-medium" v-text="service.content"></p>
         <hr>
@@ -189,6 +189,7 @@
 <style scoped>
   .service-container {
     box-shadow: 0 4px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding: 2rem  1rem;
   }
   hr{
     border-top: 2px solid #bbb;

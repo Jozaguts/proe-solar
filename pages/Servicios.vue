@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto my-5 grid grid-cols-1" >
-  <ServiceContainer></ServiceContainer>
+    <ServiceContainer></ServiceContainer>
   </div>
 
 </template>
