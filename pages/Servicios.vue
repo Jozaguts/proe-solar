@@ -1,13 +1,16 @@
 <template>
-  <div>
-    <h1>Página Servicios</h1>
+  <div class="container mx-auto my-5 grid grid-cols-1" >
+  <ServiceContainer></ServiceContainer>
   </div>
 
 </template>
 
 <script>
+  import ServiceContainer from '../components/Services/ServiceContainer'
   export default {
-    name: 'servicios'
+    components: {ServiceContainer},
+    name: 'servicios',
+
   }
 </script>
 

@@ -80,8 +80,8 @@
 <style scoped>
   .icon {
     background-position: 50% 50%;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
