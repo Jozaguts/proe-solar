@@ -1,7 +1,7 @@
 <template>
   <div >
-    <div class="service-container flex flex-col lg:flex-row md:flex-row  "  v-for="(service, index) in services" :key="service.id">
-      <div class="img-container lg:w-2/5"   :class="[index % 2  === 0 && $mq != 'sm'? 'order-1' : '']">
+    <div class="service-container flex flex-col lg:flex-row md:flex-row  appear"  v-for="(service, index) in services" :key="service.id">
+      <div class="img-container lg:w-2/5"   >
         <carousel :nav="false" :responsive="{0:{items:1},768:{items:3}}" >
           <img v-for="img in service.images" :key="img.id" :src="img.src" :alt="img.alt" class="rounded p-2">
         </carousel>
@@ -10,10 +10,12 @@
         <h1 class="capitalize text-3xl text-info-color mb-3 font-bold" v-text="service.name"></h1>
         <p class="leading-relaxed text-main-color font-medium" v-text="service.content"></p>
         <hr>
-        <button class="rounded bg-info-color text-white font-bold py-2 px-4 my-4 " :class="[index % 2  === 0 ? 'float-right': '']" >Contactar</button>
+        <button class="rounded bg-info-color text-white font-bold py-2 px-4 my-4 "  >Contactar</button>
       </div>
     </div>
   </div>
+<!--  :class="[index % 2  === 0 && $mq != 'sm'? 'order-1' : '']"-->
+<!--  :class="[index % 2  === 0 ? 'float-right': '']"-->
 </template>
 <script>
   import carousel from 'vue-owl-carousel';
