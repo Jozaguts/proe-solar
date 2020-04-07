@@ -1,5 +1,5 @@
 <template>
-  <footer class="container max-w-full bg-info-color">
+  <footer class="container max-w-full bg-info-color mt-8">
      <div class="container mx-auto grid md:grid-cols-3 grid-cols-2 ">
        <div class="flex flex-col m-5">
          <h1 class="text-white font-bold  mb-3">Nosotros</h1>

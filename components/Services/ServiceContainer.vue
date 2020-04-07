@@ -1,6 +1,6 @@
 <template>
   <div >
-    <div class="service-container flex flex-col lg:flex-row md:flex-row  appear"  v-for="(service, index) in services" :key="service.id">
+    <div class="service-container  shadow-lg flex flex-col lg:flex-row md:flex-row  appear"  v-for="(service, index) in services" :key="service.id">
       <div class="img-container lg:w-2/5"   >
         <carousel :nav="false" :responsive="{0:{items:1},768:{items:3}}" >
           <img v-for="img in service.images" :key="img.id" :src="img.src" :alt="img.alt" class="rounded p-2">
@@ -189,10 +189,10 @@
   }
 </script>
 <style scoped>
-  .service-container {
-    box-shadow: 0 4px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    padding: 2rem  1rem;
-  }
+  /*.service-container {*/
+  /*  box-shadow: 0 4px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+  /*  padding: 2rem  1rem;*/
+  /*}*/
   hr{
     border-top: 2px solid #bbb;
   }

@@ -19,14 +19,16 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, sint!
         </p>
       </section>
-      <section class="vision px-4">
-        <h2 class="font-bold text-main-color text-2xl sm:text-3xl md:text-4xl lg:text-4x1 my-16">Vision</h2>
-        <p>Posicionarnos como empresa líder en el sector energético contribuyendo a la mitigación de emisiones CO2, así mismo concientizar a la sociedad de optar por las energías limpias.</p>
-      </section>
-      <section class="vision px-4">
-        <h2 class="font-bold text-main-color text-2xl sm:text-3xl md:text-4xl lg:text-4x1 my-16">Misión</h2>
-        <p>Proe Solar Tiene como misión funcionar como empresa de alto nivel en la sección de las energías limpias, ofreciendo un servicio de alta calidad y profesionalismo a un precio accesible. Innovando en la utilización de productos y equipos de última generación. </p>
-      </section>
+      <div class="mision-vision grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
+        <section class="vision px-4 shadow-lg">
+          <h2 class="font-bold text-main-color text-2xl sm:text-3xl md:text-4xl lg:text-4x1 my-16 lg:text-center">Vision</h2>
+          <p class="p-4">Posicionarnos como empresa líder en el sector energético contribuyendo a la mitigación de emisiones CO2, así mismo concientizar a la sociedad de optar por las energías limpias.</p>
+        </section>
+        <section class="vision px-4 mx-4 shadow-lg">
+          <h2 class="font-bold text-main-color text-2xl sm:text-3xl md:text-4xl lg:text-4x1 my-16 lg:text-center">Misión</h2>
+          <p class="p-4">Proe Solar Tiene como misión funcionar como empresa de alto nivel en la sección de las energías limpias, ofreciendo un servicio de alta calidad y profesionalismo a un precio accesible. Innovando en la utilización de productos y equipos de última generación. </p>
+        </section>
+      </div>
     </div>
 </template>
 

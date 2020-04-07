@@ -72,3 +72,10 @@
 .appear{
   animation: appear 1.5s;
 }
+.box-shadow {
+  background: #142E7B;
+  background: -webkit-linear-gradient(bottom, #142E7B, #4E56AB);
+  background: -moz-linear-gradient(bottom, #142E7B, #4E56AB);
+  background: linear-gradient(to top, #142E7B, #4E56AB);
+  border-radius: 5px;
+}
